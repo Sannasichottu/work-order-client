@@ -1,10 +1,12 @@
-import {  AreaTop } from "../../components";
+// import {  AreaTop } from "../../components";
+import Form from "../../components/dashboard/form/Form";
 
 const Dashboard = () => {
   return (
     <div className="content-area">
-       <AreaTop />
-      {/*<AreaCards />
+        <Form />
+      {/* <AreaTop />
+      <AreaCards />
       <AreaCharts />
       <AreaTable /> */}
     </div>
