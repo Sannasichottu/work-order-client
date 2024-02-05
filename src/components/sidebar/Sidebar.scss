@@ -1,5 +1,5 @@
 .sidebar {
-  position: fixed;
+  position:fixed;
   left: 0;
   top: 0;
   width: 260px;
@@ -12,6 +12,7 @@
   z-index: 999;
   transition: var(--default-transition);
   overflow-y: scroll;
+  opacity: 0.8;
 
   &::-webkit-scrollbar {
     width: 6px;
@@ -28,9 +29,11 @@
 
   // toggling this class helps to hide/unhide the sidebar
   &.sidebar-show{
-    @media(max-width: 768px){
+    @media(max-width: 360px){
         transform: translateX(0);
-    }
+        
+      }
+      
   }
 
   // showing icons only on sidebar
@@ -40,9 +43,11 @@
   }
 
   // hiding full on small screen
-  @media(max-width: 768px){
+  @media(max-width: 360px){
     width: 260px;
     transform: translateX(-100%);
+   
+   
   }
 
   .sidebar-top{
@@ -70,8 +75,10 @@
         display: none;
     }
 
-    @media(max-width: 768px){
+    @media(max-width: 360px){
         display: inline-block;
+
+       
     }
   }
 
@@ -88,8 +95,8 @@
     transition: var(--default-transition);
     display: none;
 
-    @media(max-width: 768px){
-        display: inline-flex;
+    @media(max-width: 360px){
+        display: inline-flex;   
     }
 
     &:hover{
@@ -133,12 +140,14 @@
         border-radius: 8px;
     }
 
-    @media(max-width: 768px){
+    @media(max-width: 360px){
         padding: 12px;
         border-bottom: 12px;
         width: 100%;
         height: 42px;
         justify-content: flex-start;
+        
+       
     }
 
     &:hover{
@@ -166,8 +175,10 @@
     @media(max-width: 1200px){
         display: none;
     }
-    @media(max-width: 768px){
+    @media(max-width: 36px){
         display: inline-block;
+        
+       
     }
   }
 

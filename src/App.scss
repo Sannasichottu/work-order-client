@@ -47,8 +47,8 @@
   --scroll-track-bg-color: #fff;
   --scroll-thumb-bg-color: #e9e9e9;
   --submit-btn:#383854;
-  --submit-text:var(--scroll-thumb-bg-color)
- 
+  --submit-text:var(--scroll-thumb-bg-color);
+  --placeholder :rgb(129, 125, 125);
 }
 
 @mixin darkMode {
@@ -73,6 +73,7 @@
   --scroll-thumb-bg-color: #575777;
   --submit-btn:var(--primary-color);
   --submit-text:#fff;
+  --placeholder :rgb(175, 171, 171);
   
 }
 

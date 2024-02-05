@@ -8,6 +8,7 @@ import SunIcon from "./assets/icons/sun.svg";
 import BaseLayout from "./layout/BaseLayout";
 import { Dashboard, PageNotFound } from "./screens";
 import { AddOrder } from "./components";
+import ListOrder from "./components/order/listOrder/ListOrder";
 
 function App() {
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -28,6 +29,7 @@ function App() {
           <Route element={<BaseLayout />}>
             <Route path="/" element={<Dashboard />} />
             <Route path="/order" element={<AddOrder />} />
+            <Route path="/list" element={<ListOrder /> } />
             <Route path="*" element={<PageNotFound />} />
           </Route>
         </Routes>

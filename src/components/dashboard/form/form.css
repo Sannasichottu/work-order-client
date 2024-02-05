@@ -55,7 +55,7 @@
   margin-top: 20px;
 }
 .gender-box h3 {
-    color: var(--base-text-color);
+  color: var(--base-text-color);
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 8px;
@@ -82,7 +82,7 @@
   margin-top: 15px;
 }
 .select-box {
-    background-color: #fff;
+  background-color: #fff;
 }
 .select-box select {
   height: 100%;
@@ -107,6 +107,10 @@
 }
 .form button:hover {
   background: rgb(88, 56, 250);
+}
+.next {
+  text-decoration: none;
+  color: var(--submit-text) ;
 }
 /*Responsive*/
 @media screen and (max-width: 500px) {

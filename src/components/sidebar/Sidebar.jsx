@@ -48,8 +48,8 @@ const Sidebar = () => {
       className={`sidebar ${isSidebarOpen ? "sidebar-show" : ""}`}
       ref={navbarRef}
     >
-      <div className="sidebar-top">
-        <div className="sidebar-brand">
+      <div className="sidebar-top">         
+      <div className="sidebar-brand" >
           <img src={theme === LIGHT_THEME ? LogoBlue : LogoWhite} alt="" />
           <span className="sidebar-brand-text">tamilinfo</span>
         </div>
@@ -61,7 +61,7 @@ const Sidebar = () => {
         <div className="sidebar-menu">
           <ul className="menu-list">
             <li className="menu-item">
-              <Link to="/" className="menu-link ">
+              <Link to="/" className="menu-link">
                 <span className="menu-link-icon">
                   <MdOutlineGridView size={18} />
                 </span>

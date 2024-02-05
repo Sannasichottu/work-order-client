@@ -1,0 +1,80 @@
+
+.order-head {
+    display: flex;
+    flex-flow: row wrap;
+    min-width: 0;
+}
+
+.form-align  {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 5px;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    flex-grow:1;
+    color: var(--base-text-color);
+}
+
+.form-input {
+    color: var(--submit-text);
+    background-color: rgba(0, 0, 0, 0.04);
+    border-color: #d9d9d9;
+    box-shadow: none;
+    cursor: not-allowed;
+    opacity: 1;
+    margin-top: 10px;
+    padding: 10px;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: var(--placeholder);
+}
+
+.form-input-select {
+    
+    outline: none;
+    border: none;
+    color: #5c5a5a;
+    font-size: 1rem;
+}
+
+.option {
+    width: 100%;
+    height: 100%;
+    color: var(--text-color-inverted);
+    background-color: rgba(0, 0, 0, 0.04);
+    border-color: #d9d9d9;
+    box-shadow: none;
+    cursor: not-allowed;
+    opacity: 1;
+    margin-top: 10px;
+    padding: 10px;
+}
+.btn {
+    display: flex;
+}
+.button {
+    height: 45px;
+    width: 80%;
+    color: var(--submit-text);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background:var(--submit-btn);
+    border-radius: 30px;
+    margin-left: 20px;
+  }
+  .button:hover {
+    background: rgb(88, 56, 250);
+  }
+
+
+  /*Responsive*/
+@media screen and (max-width: 500px) {
+    .btn {
+      flex-wrap: wrap;
+    }
+}

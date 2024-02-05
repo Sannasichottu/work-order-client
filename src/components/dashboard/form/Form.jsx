@@ -1,5 +1,6 @@
 import React from 'react'
 import './form.css'
+import { Link } from 'react-router-dom'
 
 function Form() {
   return (
@@ -34,7 +35,7 @@ function Form() {
             <input type="date" placeholder="Enter birth date" required />
           </div>
         </div> */}
-        <div class="gender-box">
+        {/* <div class="gender-box">
           <h3> Radio Button</h3>
           <div class="gender-option">
             <div class="gender">
@@ -50,7 +51,7 @@ function Form() {
               <label for="check-other">option 3</label>
             </div>
           </div>
-        </div>
+        </div> */}
         <div class="input-box address">
           <label id='bold' >Address</label> <br /><br />
           <label>Service Address</label>
@@ -92,7 +93,14 @@ function Form() {
             <input type="number" placeholder="Enter postal code" required />
           </div>
         </div>
-        <button>Submit</button>
+        <div class="column">
+        <button>Save</button>
+        <button>
+          <Link to="/order" className='next' >
+            Next
+           </Link> 
+        </button>
+        </div>
       </form>
     </section>
     </div>
