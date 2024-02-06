@@ -1,7 +1,8 @@
 export { default as Sidebar } from "./sidebar/Sidebar";
-export {default as Form} from "./dashboard/form/Form"
-export {default as AddOrder} from "./order/addOrder/AddOrder"
- // export { default as AreaCards } from "./dashboard/areaCards/AreaCards";
-// export { default as AreaCharts } from "./dashboard/areaCharts/AreaCharts";
-// export { default as AreaTable } from "./dashboard/areaTable/AreaTable";
-// export { default as AreaTop } from "./dashboard/areaTop/AreaTop";
+export {default as Form} from "./dashboard/form/Form" //customer
+export {default as AddOrder} from "./dashboard/addOrder/AddOrder" //customer
+export { default as RecivedOrder } from "./intermediate/recivedOrder/RecivedOrder"; //intermediate
+export {default as RecivedList } from "./vendor/recivedList/RecivedList" // vendor
+export {default as UploadQuotation } from "./vendor/uploadQuotation/UploadQuotation" // vendor
+export {default as RecivedQuotation} from "./intermediate/recivedQuotation/RecivedQuotation" //intermediate
+export {default as UpdateQuotation} from "./intermediate/updateQuotation/UpdateQuotation"  //intermediate

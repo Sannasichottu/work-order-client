@@ -13,10 +13,10 @@ const AddOrder = () => {
           </div>
           <div className="form-align" >
             <label>Customer</label>
-            <input placeholder="Customer Name" type="text" className="form-input" />
+            <input placeholder="Customer Name / #id" type="text" className="form-input" />
           </div>
 
-          <div className="form-align" >
+          {/* <div className="form-align" >
             <label>Order Status</label>
             <select className="form-input option">
               <option className="form-input-select active"  name="new" id="new"  >
@@ -41,7 +41,7 @@ const AddOrder = () => {
                 Done
               </option>
             </select>
-          </div>
+          </div> */}
         </div>
       </form>
       <br /> <br /> <br />
@@ -52,23 +52,23 @@ const AddOrder = () => {
             <input type="number" placeholder="Name" className="form-input"/>
           </div>
           <div className="form-align" >
+            <label>Width</label>
+            <input type="number" className="form-input" />
+          </div>
+          <div className="form-align" >
+            <label>Height</label>
+            <input type="number" className="form-input" />
+          </div>
+          <div className="form-align" >
             <label>Pieces</label>
-            <input type="number" className="form-input" />
-          </div>
-          <div className="form-align" >
-            <label>Amount</label>
-            <input type="number" className="form-input" />
-          </div>
-          <div className="form-align" >
-            <label>Tax</label>
             <input type="number" className="form-input" />
           </div>
           </div>
           <div className="btn">
         <button class="button">Add item</button>
         <button className="button">
-          <Link to="/list" className='next' >
-            List Order's
+          <Link to="/recivedOrder" className='next' >
+            Send
            </Link> 
         </button>
         </div>

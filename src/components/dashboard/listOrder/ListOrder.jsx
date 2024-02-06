@@ -44,7 +44,7 @@ const ListOrder = () => {
             <th>Order Num</th>
             <th>Status</th>
             <th>Customer</th>
-            <th>Items</th>
+            <th>Quantity</th>
             <th>CreatedAt</th>
             <th>Edit</th>
           </tr>

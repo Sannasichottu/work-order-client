@@ -13,9 +13,9 @@ function Form() {
       <div className="input-box address">
           <label>Contact Details</label>
           <input type="text" placeholder="Name"  />
-          <input type="text" placeholder="Company Name" required />
-          <input type="phone" placeholder="Phone" required />
-          <input type="Email" placeholder="Email" required />
+          <input type="text" placeholder="Company Name"/>
+          <input type="phone" placeholder="Phone" />
+          <input type="Email" placeholder="Email" />
                   </div>
         {/* <div class="input-box">
           <label>Full Name</label>
@@ -53,46 +53,15 @@ function Form() {
           </div>
         </div> */}
         <div class="input-box address">
-          <label id='bold' >Address</label> <br /><br />
-          <label>Service Address</label>
-          <input type="text" placeholder="Enter street address" required />
-          <input type="text" placeholder="Enter street address line 2" required />
-          {/* <div class="column">
-            <div class="select-box">
-              <select>
-                <option hidden>Country</option>
-                <option>America</option>
-                <option>Japan</option>
-                <option>India</option>
-                <option>Nepal</option>
-              </select>
-            </div>
-            <input type="text" placeholder="Enter your region" required />
-          </div> */}
+          <label id='bold' >Address</label> 
+          {/* <label>Service Address</label> */}
+          <input type="text" placeholder="Enter street address"  />
+          <input type="text" placeholder="Enter street address line 2"  />
           <div class="column">
-            <input type="text" placeholder="Enter your city" required />
-            <input type="number" placeholder="Enter postal code" required />
-          </div><br />
-          <label>Billing Address</label>
-          <input type="text" placeholder="Enter street address" required />
-          <input type="text" placeholder="Enter street address line 2" required />
-          <div class="column">
-            {/* <div class="select-box">
-              <select>
-                <option hidden>Country</option>
-                <option>America</option>
-                <option>Japan</option>
-                <option>India</option>
-                <option>Nepal</option>
-              </select>
-            <input type="text" placeholder="Enter your region" required />
-            </div> */}
-          </div>
-          <div class="column">
-            <input type="text" placeholder="Enter your city" required />
-            <input type="number" placeholder="Enter postal code" required />
-          </div>
-        </div>
+            <input type="text" placeholder="Enter your city"  />
+            <input type="number" placeholder="Enter pin code"  />
+          </div><br /> <br /><br /> <br /> <br />
+         </div>
         <div class="column">
         <button>Save</button>
         <button>

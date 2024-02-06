@@ -7,8 +7,10 @@ import MoonIcon from "./assets/icons/moon.svg";
 import SunIcon from "./assets/icons/sun.svg";
 import BaseLayout from "./layout/BaseLayout";
 import { Dashboard, PageNotFound } from "./screens";
-import { AddOrder } from "./components";
-import ListOrder from "./components/order/listOrder/ListOrder";
+import { AddOrder, RecivedQuotation, UpdateQuotation, UploadQuotation } from "./components";  //customer
+// import ListOrder from "./components/order/listOrder/ListOrder";
+import RecivedOrder from "./components/intermediate/recivedOrder/RecivedOrder";  //intermediate
+import RecivedList from "./components/vendor/recivedList/RecivedList"; //vendor
 
 function App() {
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -29,7 +31,17 @@ function App() {
           <Route element={<BaseLayout />}>
             <Route path="/" element={<Dashboard />} />
             <Route path="/order" element={<AddOrder />} />
-            <Route path="/list" element={<ListOrder /> } />
+            {/* <Route path="/list" element={<ListOrder /> } /> */}
+
+            {/* Intermediate */}
+            <Route path="/recivedOrder" element={<RecivedOrder/> } />
+            <Route path="/recivedQuotation" element={<RecivedQuotation /> } />
+            <Route path="/updateQuotation" element={<UpdateQuotation /> } />
+
+            {/* Vendor */}
+            <Route path="/recivedList" element={<RecivedList /> } />
+            <Route path="/uploadQuotation" element={<UploadQuotation /> } />
+            
             <Route path="*" element={<PageNotFound />} />
           </Route>
         </Routes>

@@ -1,0 +1,41 @@
+
+.detail{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+  }
+
+  .detail-box{
+    border: 1px solid red;
+    padding:15px;
+    margin: 20px;
+  }
+
+  .detail-box h1{
+    font-size: 20px;
+    color: var(--toggle-btn-icon-color);
+  }
+
+  .cmpny-detail{
+    display: flex;
+    gap: 30px;
+    flex-wrap: nowrap;
+
+  }
+.head {
+  color: rgb(245, 83, 83);
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: start;
+}
+.para {
+  color:  var(--xl-text-color);
+  margin-top: 13px;
+  text-align: start;
+}
+
+.next-1 {
+  text-decoration: none;
+  color: var(--xl-text-color);
+}
