@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 const AddOrder = () => {
    return (
     <div>
+        <h2 className="heading">Customer Order item</h2>
       <form>
         <div className="order-head">
           <div className="form-align" >

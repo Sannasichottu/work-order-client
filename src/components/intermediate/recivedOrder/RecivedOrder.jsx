@@ -7,7 +7,7 @@ const RecivedOrder = () => {
    
   return (
     <div>
-        <h2 className="heading">Recived Order From Customer</h2>
+        <h2 className="heading">Recived Order From Customer & Send to Vendor</h2>
       <div className="list-tab">
         <table className="table center">
           <thead className="table-head">

@@ -5,7 +5,7 @@ import './recivedList.css'
 const RecivedList = () => {
   return (
     <div>
-      <h2 className="heading">Recived list From Vendor</h2>
+      <h2 className="heading">Recived list From Vendor </h2>
       <div className="list-tab">
         <table className="table center">
           <thead className="table-head">
