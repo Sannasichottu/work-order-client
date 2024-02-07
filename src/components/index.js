@@ -6,3 +6,5 @@ export {default as RecivedList } from "./vendor/recivedList/RecivedList" // vend
 export {default as UploadQuotation } from "./vendor/uploadQuotation/UploadQuotation" // vendor
 export {default as RecivedQuotation} from "./intermediate/recivedQuotation/RecivedQuotation" //intermediate
 export {default as UpdateQuotation} from "./intermediate/updateQuotation/UpdateQuotation"  //intermediate
+export {default as RecivedCustomer} from "./dashboard/recivedCustomer/RecivedCustomer" //customer
+export {default as DownloadInvoice} from "./dashboard/downloadInvoice/DownloadInvoice" //customer

@@ -7,7 +7,7 @@ import MoonIcon from "./assets/icons/moon.svg";
 import SunIcon from "./assets/icons/sun.svg";
 import BaseLayout from "./layout/BaseLayout";
 import { Dashboard, PageNotFound } from "./screens";
-import { AddOrder, RecivedQuotation, UpdateQuotation, UploadQuotation } from "./components";  //customer
+import { AddOrder, DownloadInvoice, RecivedCustomer, RecivedQuotation, UpdateQuotation, UploadQuotation } from "./components";  //customer
 // import ListOrder from "./components/order/listOrder/ListOrder";
 import RecivedOrder from "./components/intermediate/recivedOrder/RecivedOrder";  //intermediate
 import RecivedList from "./components/vendor/recivedList/RecivedList"; //vendor
@@ -31,6 +31,8 @@ function App() {
           <Route element={<BaseLayout />}>
             <Route path="/" element={<Dashboard />} />
             <Route path="/order" element={<AddOrder />} />
+            <Route path="/recivedCustomer" element={<RecivedCustomer />} />
+            <Route path="/downloadInvoice" element={<DownloadInvoice />} />
             {/* <Route path="/list" element={<ListOrder /> } /> */}
 
             {/* Intermediate */}

@@ -51,7 +51,7 @@ const Sidebar = () => {
       <div className="sidebar-top">         
       <div className="sidebar-brand" >
           <img src={theme === LIGHT_THEME ? LogoBlue : LogoWhite} alt="" />
-          <span className="sidebar-brand-text">tamilinfo</span>
+          <span className="sidebar-brand-text">Work order management</span>
         </div>
         <button className="sidebar-close-btn" onClick={closeSidebar}>
           <MdOutlineClose size={24} />
@@ -69,7 +69,7 @@ const Sidebar = () => {
               </Link>
             </li>
             <li className="menu-item">
-              <Link to="/order" className="menu-link ">
+              <Link to="/recivedOrder" className="menu-link ">
                 <span className="menu-link-icon">
                   <MdOutlineBarChart size={20} />
                 </span>
@@ -77,11 +77,11 @@ const Sidebar = () => {
               </Link>
             </li>
             <li className="menu-item">
-              <Link to="/" className="menu-link">
+              <Link to="/recivedList" className="menu-link">
                 <span className="menu-link-icon">
                   <MdOutlineAttachMoney size={20} />
                 </span>
-                <span className="menu-link-text">Dummy 2</span>
+                <span className="menu-link-text">Vendor</span>
               </Link>
             </li>
             <li className="menu-item">
